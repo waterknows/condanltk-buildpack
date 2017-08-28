@@ -14,12 +14,10 @@ $ git push heroku master
 ```
 
 ### Usage
-Add the following text files in your app's root directory:
+To install python packages, add the following text files under your app's root directory:
 * conda-requirements.txt: list packages installed by conda, split by new line.
 * requirements.txt: list packages installed by pip, split by new line.
 * nltk.txt: list data packages installed by nltk.downloader(), split by space. Don't forget to list "nltk" in conda-requirements.txt or "requirements.txt".
-
-The buildpack will download listed packages automatically. Refer to /text folder as an example usage.
 
 ### Tip
 This buildpack will result in a large slug size upon first deployment to heroku app (~300MB). Subsequent builds will be much smaller (~200MB). You can also refer to this [article](https://robots.thoughtbot.com/how-to-reduce-a-large-heroku-compiled-slug-size) for reducing slug size. 
