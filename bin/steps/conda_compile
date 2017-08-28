@@ -23,10 +23,10 @@ if [ -f requirements.txt ]; then
 fi
 
 if [ -f nltk.txt ]; then
-	nltk_packages=$(tr "\n" " " < "nltk.txt")
+	nltk_packages=$(< "nltk.txt")
     puts-step "Downloading NLTK packages: $nltk_packages"
 
-    python -m nltk.downloader "$nltk_packages"  | indent
+    python -m nltk.downloader $nltk_packages  | indent
 fi
 
 # Clean up the installation environment .
