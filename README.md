@@ -1,7 +1,7 @@
 CondaNLTK Buildpack
 ===============
 
-This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks) that enables and integrates the installation of binary packages through [Conda](http://conda.pydata.org/), [PIP](https://pip.pypa.io/en/stable/) and [NLTK Downloader](http://www.nltk.org/data.html). It is modified from this [Conda Buildpack](https://github.com/trib3/conda-buildpack.git).
+This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks) that enables and integrates the installation of binary packages through [Conda](http://conda.pydata.org/), [PIP](https://pip.pypa.io/en/stable/) and [NLTK Downloader](http://www.nltk.org/data.html).
 
 The buildpack is built to install packages such as scikit-learn and NLTK Data that official buildpack cannot handle. The default environment is Python 3 with Miniconda3. 
 
@@ -24,4 +24,7 @@ The buildpack will download listed packages automatically. Refer to /text folder
 ### Tip
 This buildpack will result in a large slug size upon first deployment to heroku app (~300MB). Subsequent builds will be much smaller (~200MB). You can also refer to this [article](https://robots.thoughtbot.com/how-to-reduce-a-large-heroku-compiled-slug-size) for reducing slug size. 
 
+### Reference
+* [Conda Buildpack](https://github.com/trib3/conda-buildpack.git).
+* [Official Python Buildpack](https://github.com/heroku/heroku-buildpack-python)
 
