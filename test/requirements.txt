@@ -1,3 +1,2 @@
+lda==1.0.5
 requests
-httpbin
-gunicorn
