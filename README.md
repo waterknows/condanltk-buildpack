@@ -1,7 +1,7 @@
 CondaNLTK Buildpack
 ===============
 
-This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks) that enables and integrates the installation of binary packages through [Conda](http://conda.pydata.org/), [PIP](https://pip.pypa.io/en/stable/) and [NLTK Data](http://www.nltk.org/data.html). It is modified from this [Conda Buildpack](https://github.com/trib3/conda-buildpack.git)
+This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks) that enables and integrates the installation of binary packages through [Conda](http://conda.pydata.org/), [PIP](https://pip.pypa.io/en/stable/) and [NLTK Downloader](http://www.nltk.org/data.html). It is modified from this [Conda Buildpack](https://github.com/trib3/conda-buildpack.git)
 
 The default environment is Python 3 with Miniconda3. 
 
