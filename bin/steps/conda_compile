@@ -19,7 +19,14 @@ fi
 
 if [ -f requirements.txt ]; then
     puts-step "Installing dependencies using Pip"
-    pip install -r requirements.txt  --exists-action=w --allow-all-external | indent
+    pip install -r requirements.txt  --exists-action=w | indent
+fi
+
+if [ -f nltk.txt ]; then
+	nltk_packages=$(tr "\n" " " < "nltk.txt")
+    puts-step "Downloading NLTK packages: $nltk_packages"
+
+    python -m nltk.downloader "$nltk_packages"  | indent
 fi
 
 # Clean up the installation environment .
